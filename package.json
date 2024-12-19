@@ -1,0 +1,113 @@
+{
+	"name": "pigeon-ai",
+	"private": true,
+	"description": "PigeonPosse collective's AI toolkit",
+	"keywords": [
+		"ai",
+		"artificial intelligence",
+		"pp",
+		"pigeonposse"
+	],
+	"homepage": "https://ai.pigeonposse.com/",
+	"bugs": {
+		"url": "https://github.com/pigeonposse/pigeon-ai/issues",
+		"email": "dev@pigeonposse.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pigeonposse/pigeon-ai"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/?popup=donate"
+	},
+	"license": "GPL-3.0",
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://github.com/angelespejo"
+	},
+	"contributors": [
+		{
+			"name": "Alejo",
+			"email": "alejo@pigeonposse.com",
+			"url": "https://github.com/alejomalia"
+		}
+	],
+	"type": "module",
+	"scripts": {
+		".": "dovenv",
+		"build": "pnpm run --sequential \"/build:.*/\"",
+		"build:_": "dovenv templates",
+		"build:doc": "dovenv docs build --silent",
+		"dev": "pnpm build:_ & dovenv docs dev",
+		"prepare": "dovenv git husky",
+		"test": "pnpm run --sequential \"/test:.*/\"",
+		"test:check": "dovenv check --silent",
+		"test:lint": "dovenv lint staged --silent",
+		"test:transform": "dovenv transform --silent"
+	},
+	"devDependencies": {
+		"@dovenv/core": "1.0.1",
+		"@dovenv/theme-pigeonposse": "1.0.1"
+	},
+	"packageManager": "pnpm@9.11.0",
+	"engines": {
+		"node": ">=20.0.0",
+		"pnpm": ">=8.10.0"
+	},
+	"extra": {
+		"id": "pigeon-ai",
+		"productName": "Pigeon AI",
+		"shortDesc": "PigeonPosse AI Toolkit",
+		"action": "Discover the magic of our AI tools",
+		"libraryUrl": "https://www.npmjs.com/package/pigeon-ai",
+		"licenseUrl": "https://github.com/pigeonposse/pigeon-ai/blob/main/LICENSE",
+		"libraryId": "pigeon-ai",
+		"repoId": "pigeon-ai",
+		"rawRepoUrl": "https://raw.githubusercontent.com/pigeonposse/pigeon-ai",
+		"docsUrl": "https://ai.pigeonposse.com",
+		"collective": {
+			"id": "pigeonposse",
+			"name": "PigeonPosse",
+			"funding": "https://pigeonposse.com/?popup=donate",
+			"gh": "https://github.com/pigeonposse",
+			"about": "https://pigeonposse.com?popup=about",
+			"url": "https://pigeonposse.com",
+			"web": "https://pigeonposse.com",
+			"email": "dev@pigeonposse.com",
+			"socialUser": {
+				"twitter": "pigeonposse_",
+				"instagram": "pigeon.posse",
+				"medium": "pigeonposse"
+			},
+			"social": {
+				"twitter": "https://twitter.com/pigeonposse_",
+				"instagram": "https://www.instagram.com/pigeon.posse/",
+				"medium": "https://medium.com/@pigeonposse"
+			}
+		},
+		"libraries": [
+			{
+				"id": "brainvat",
+				"icon": "🧠"
+			},
+			{
+				"id": "personality",
+				"icon": "✨"
+			},
+			{
+				"id": "bravecore",
+				"icon": "❤️"
+			},
+			{
+				"id": "smartplant",
+				"icon": "🌿"
+			},
+			{
+				"id": "env-ai",
+				"icon": "🤖"
+			}
+		]
+	}
+}
