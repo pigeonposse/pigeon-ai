@@ -88,7 +88,7 @@ git branch -M main &&
 git remote add origin https://github.com/${pkg.extra.collective.id}/${pkg.name}.git &&
 git push -u origin main`
 
-				console.log( `Command to execute:\n\n${cmd}` )
+				console.log( `Command to execute:\n\n${cmd}\n\n` )
 				await exec( cmd )
 
 			},
@@ -96,8 +96,15 @@ git push -u origin main`
 	},
 	pigeonposseTheme( {
 		workspaceDir,
+		repo : {
+			URL         : pkg.repository.url,
+			homepageURL : pkg.homepage,
+			tags        : pkg.keywords,
+			desc        : pkg.description,
+		},
+
 		lint : {
-			staged : { '*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,json,yml,yaml}': 'pnpm --silent . lint eslint --silent' },
+			staged : { '*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,json,yml,yaml}': 'dovenv lint eslint --silent' },
 			eslint : { flags: [ '--fix' ] },
 		},
 		docs : {
@@ -141,6 +148,7 @@ git push -u origin main`
 				reference : false,
 				intro     : false,
 			},
+			vitepress : { ignoreDeadLinks: true },
 		},
 		templates : {
 			...getTemplates( ghUserID, libraries.map( l => l.id ) ),

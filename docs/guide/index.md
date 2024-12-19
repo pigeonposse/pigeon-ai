@@ -1,9 +1,11 @@
 # What is Pigeon AI?
+
 PigeonPosse collective's AI toolkit
 
 ## View more
 
 - 🧠 [brainvat](./brainvat/index.md)
+  - [todo](./brainvat/todo)
 - ✨ [Personality](./personality/index.md)
 - ❤️ [Bravecore](./bravecore/index.md)
 - 🌿 [smartplant](./smartplant/index.md)
