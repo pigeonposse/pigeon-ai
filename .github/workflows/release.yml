@@ -2,7 +2,7 @@
 # RELEASE
 ###############################################################################
 
-name: ✅ Tests and check for updates
+name: ✅ Release packages
 
 on:
   pull_request:
@@ -58,7 +58,6 @@ jobs:
       - name: ⬇️📦 Install dependencies
         run: pnpm install --no-frozen-lockfile --ignore-scripts
 
-
       #########################################################################
       # BUILD
       #########################################################################
@@ -98,10 +97,9 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           branch: main
-          projectName: "dovenv"
+          projectName: "ai"
           directory: 'build/docs'
           wranglerVersion: '3'
-
 
       - name: ℹ️➡️ Check for changes in package.json
         run: |

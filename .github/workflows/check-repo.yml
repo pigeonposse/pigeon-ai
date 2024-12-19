@@ -1,0 +1,58 @@
+name: Detect Changes in Repositories
+
+on:
+  workflow_dispatch: # Permitir ejecución manual
+  schedule:
+    - cron: '0 0 * * *' # Ejecutar cada día a la medianoche
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v3
+
+      - name: Load repository list
+        id: load-repos
+        run: |
+          echo "::set-output name=repos::$(cat package.json | jq -r '.extra.libraries[].id' | paste -sd, -)"
+
+      - name: Check for changes in repositories
+        id: check-changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOS: ${{ steps.load-repos.outputs.repos }}
+        run: |
+          CHANGED=false
+          for REPO in $(echo $REPOS | tr ',' '\n'); do
+            echo "Checking repository: pigeonposse/$REPO"
+            LATEST_COMMIT=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+              https://api.github.com/repos/pigeonposse/$REPO/commits?per_page=1 | jq -r '.[0].sha')
+
+            echo "Latest commit SHA for $REPO: $LATEST_COMMIT"
+
+            if [ -f ".github/state/$REPO.sha" ]; then
+              PREVIOUS_COMMIT=$(cat .github/state/$REPO.sha)
+              if [ "$LATEST_COMMIT" != "$PREVIOUS_COMMIT" ]; then
+                echo "Changes detected in $REPO."
+                echo "$LATEST_COMMIT" > .github/state/$REPO.sha
+                CHANGED=true
+              else
+                echo "No changes in $REPO."
+              fi
+            else
+              echo "No previous state found for $REPO. Recording current state."
+              echo "$LATEST_COMMIT" > .github/state/$REPO.sha
+              CHANGED=true
+            fi
+          done
+
+          echo "CHANGED=$CHANGED" >> $GITHUB_ENV
+
+      - name: 💾🐙😺➡️ Call to workflow for create lib releases
+        if: env.CHANGED == 'true'
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: release.yml
+        continue-on-error: true

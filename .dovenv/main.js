@@ -97,10 +97,11 @@ git push -u origin main`
 	pigeonposseTheme( {
 		workspaceDir,
 		repo : {
-			URL         : pkg.repository.url,
-			homepageURL : pkg.homepage,
-			tags        : pkg.keywords,
-			desc        : pkg.description,
+			URL          : pkg.repository.url,
+			homepageURL  : pkg.homepage,
+			tags         : pkg.keywords,
+			desc         : pkg.description,
+			workflowsDir : '.github/workflows',
 		},
 
 		lint : {
