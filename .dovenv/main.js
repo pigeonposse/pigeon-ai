@@ -117,7 +117,7 @@ git push -u origin main`
 				dark      : {
 					bg     : '#000',
 					bgAlt  : '#0b0b0d',
-					bgSoft : '#131119',
+					bgSoft : '#0d0c10',
 				},
 			} },
 			css : `

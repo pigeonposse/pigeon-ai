@@ -71,7 +71,7 @@ In addition to the specific parameters, we have designed a system of general hap
 - 😖 **Critical conditions:** The plant is in a critical state and requires immediate action to prevent its condition will get worse.
 - 🥵 **Extremely critical:** The plant is in an extremely critical state and is in danger of dying if urgent measures are not taken.
 - 😵 **No Data Detected:** Vital signals missing or sensors not transmitting requiring immediate check.
-  
+
 ## ☕ Donate
 
 Help us to develop more interesting things.
