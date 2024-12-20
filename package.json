@@ -39,18 +39,18 @@
 	"scripts": {
 		".": "dovenv",
 		"build": "pnpm run --sequential \"/build:.*/\"",
-		"build:_": "dovenv templates",
+		"build:_": "dovenv templates --silent",
 		"build:doc": "dovenv docs build --silent",
-		"dev": "pnpm build:_ & dovenv docs dev",
-		"prepare": "dovenv git husky",
+		"dev": "pnpm build:_ & dovenv docs dev --silent",
+		"prepare": "dovenv git husky --silent",
 		"test": "pnpm run --sequential \"/test:.*/\"",
 		"test:check": "dovenv check --silent",
 		"test:lint": "dovenv lint staged --silent",
 		"test:transform": "dovenv transform --silent"
 	},
 	"devDependencies": {
-		"@dovenv/core": "1.0.1",
-		"@dovenv/theme-pigeonposse": "1.0.1"
+		"@dovenv/core": "1.0.2",
+		"@dovenv/theme-pigeonposse": "1.0.2"
 	},
 	"packageManager": "pnpm@9.11.0",
 	"engines": {

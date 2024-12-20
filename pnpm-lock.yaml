@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@dovenv/core':
-        specifier: 1.0.1
-        version: 1.0.1
+        specifier: 1.0.2
+        version: 1.0.2
       '@dovenv/theme-pigeonposse':
-        specifier: 1.0.1
-        version: 1.0.1(@algolia/client-search@5.18.0)(@dovenv/core@1.0.1)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)
+        specifier: 1.0.2
+        version: 1.0.2(@algolia/client-search@5.18.0)(@dovenv/core@1.0.2)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)
 
 packages:
 
@@ -785,73 +785,73 @@ packages:
       search-insights:
         optional: true
 
-  '@dovenv/convert@1.0.1':
-    resolution: {integrity: sha512-xXTdKJXUriRenmmKh99BwuSdt1Vi2tRzGZ8tsBopLDPKClLOnex5WXOuH0u8/Hzgjqwc5A4wA+V3zDnMtuq45Q==}
+  '@dovenv/convert@1.0.2':
+    resolution: {integrity: sha512-1muhslu198iqXd+xbylYd/r90yv49Acfk76hDkaOgsHq8tB9s361SGfACa1v3HbQo56KqonT1KaYF6qO+VA7NA==}
     peerDependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
-  '@dovenv/core@1.0.1':
-    resolution: {integrity: sha512-+r2bthku/8+v2ewWwhpruRFxVMCsOv3x8pV1v0ZB4tuGpm51U2i+GCXjlBR8tJFYBuF/wSEKEzkUjT2NHAYPKA==}
+  '@dovenv/core@1.0.2':
+    resolution: {integrity: sha512-wfTgG1f1W2RubpkkNX7hBlJBgawsmN7MkBM5h2HdIivxPohkqZx1j6tcIQdvHpotzGIOssaI7a5SuWiB6vWcLw==}
     hasBin: true
 
-  '@dovenv/docs@1.0.1':
-    resolution: {integrity: sha512-DW/eLWN/sr3PoWFrTeENux9eTLB65CGK3HwJoe6fkwJ2aegbCas5tDq5pHIPAUlxabb/NvWhGMObO0Ol9VHX5A==}
+  '@dovenv/docs@1.0.2':
+    resolution: {integrity: sha512-1lK/uXgMnrHyPKPTeiWd7T1YYMGkN9ocj6PlK9kM4wdjJQWruW3j+Flgb3yuxSZQ+4+SQH08l8TcwHNTuGhSOQ==}
     hasBin: true
     peerDependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
-  '@dovenv/eslint-config@1.0.1':
-    resolution: {integrity: sha512-MUv2FXl/wtP+sw3Rh6jop0hZchil3456mmdZ1hENHk58qb1Ku6Lplm3ntLf2co/tpFSa8SzEfqWQVPd/m1etWw==}
+  '@dovenv/eslint-config@1.0.2':
+    resolution: {integrity: sha512-rBCeK/D5tsd+YX+XRGo1CpevbfSI9C1IZzk5ddDbv1c20BPUEPzdtGrvhhxGsw3S287J31d6OC3Gqp5ScwsMYA==}
     peerDependencies:
       eslint: 9.14.0
 
-  '@dovenv/examples@1.0.1':
-    resolution: {integrity: sha512-VsX2cKodFzqKyxI+5lItCvfusBeJ9WUYqsIJv2WFfKUGujN/UP/st4/rkSVkv4run1u3s/s+MJqjTFfooMvVcQ==}
+  '@dovenv/examples@1.0.2':
+    resolution: {integrity: sha512-jVpm4S2ba9pYgwDQVTJyJE7kERiPDjwTUtBMnISsiysSUNdsSL7nNZQFTlzewae6Ac9aE3gXYvezxyo+EU7pVQ==}
     peerDependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
-  '@dovenv/lint@1.0.1':
-    resolution: {integrity: sha512-LFA8XLj9O/S86fp0BDwYQzYXJu9AfLAAkqKtSoc+MHNOoVlsPzBWAFGKlMhrYYGIDaAGNo6w/xQR6RVXDzGHxw==}
+  '@dovenv/lint@1.0.2':
+    resolution: {integrity: sha512-+8UDHESL9W/ACwUBRh/D0KMSeVvemjhAnbBH9VGzSxEgHfhK3T0o9RGRGrlLyG0pfIlm0U64vEjCVWAy5bMgHw==}
     peerDependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
-  '@dovenv/repo@1.0.1':
-    resolution: {integrity: sha512-h4xLFYo1yNZ7BoAxeU9WMmL+tmtTAI2eC87Il3dYXhr7MdN0IrXtVEb4KvnnDxbbRRpoTjfOoKcrVnMFlZ8tTg==}
+  '@dovenv/repo@1.0.2':
+    resolution: {integrity: sha512-MoQ3f3B5gRF550xv94SmLq1l1WIfTBsBNVVLG6wWHfIdKz+gfLioHBHifoitCBpm+4gj9KthfuaskRcKsC38Xw==}
     peerDependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
-  '@dovenv/stylelint-config@1.0.1':
-    resolution: {integrity: sha512-ExU6lZr701G3SEzZzBzlEPpqDWUzSnBKLEU0sg+/6h5U+twiUX+6tu5FoVIrl9ffIurxQ8xQlu5SSIP14k4F/A==}
+  '@dovenv/stylelint-config@1.0.2':
+    resolution: {integrity: sha512-4GA8GItU8KHZhVVR9fVqlOCXspgKbQDPawEy2gWPUOUpaHCUX1JbWPlNPrA2RICODCY4hr2U/U+ASeLqsfkKEQ==}
     peerDependencies:
       stylelint: '>=16.11.0'
 
-  '@dovenv/templates@1.0.1':
-    resolution: {integrity: sha512-fIkOCGYC+W6HRsJfcTx6BDTnh0YUSNTuwxe24Gb79G7qU0dRmQP344LvtPe+ltwwXjeKUJyPiYfhkThpbQcRoQ==}
+  '@dovenv/templates@1.0.2':
+    resolution: {integrity: sha512-qdtLvd2LdTkLa1JShT8rgK958p4cWv+3EEG3FXtLYDGMAaQGcpwdleivExA6Eo2VIy+vhZAgL5Ojl2kzrnsfVQ==}
     peerDependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
-  '@dovenv/theme-banda@1.0.1':
-    resolution: {integrity: sha512-8+UmmszFwjUe8OIW9duScml+5seHN1xJJdf31TDJdOy2Q82KSYgiH3ay1DHlVqYjI9Y6vbgRwxflVNkW88Jcmw==}
+  '@dovenv/theme-banda@1.0.2':
+    resolution: {integrity: sha512-JKTVKRcIdKSqMedCKndHdjFgo1l/Nw6JeQgsJl3YC2Qj9Un7if9czCzu8jRZLzxruakpKgwFLy7k0dmWQGcNlQ==}
     peerDependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
-  '@dovenv/theme-pigeonposse@1.0.1':
-    resolution: {integrity: sha512-bTfbF+y/f2DYP2hLIrrUiupHFW5sE/NzXY0NepjYzeBz3kHed6YcaIaBmQt1W0LdwBFVFBCrzqnCMRnYd+rMSQ==}
+  '@dovenv/theme-pigeonposse@1.0.2':
+    resolution: {integrity: sha512-LBUkq5D6ElulBRhtjgKtBWLj4FsnWvnbjDgLbUYqFyLbzMLerm0SSXL0LLez0OHKnKtV1/F17n6sffxUpUaFwQ==}
     peerDependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
-  '@dovenv/todo@1.0.1':
-    resolution: {integrity: sha512-zwrMcMdELFoCp5ldJR65Crt9zGF8EfIVjI57Osg1scYlJ3PRE9G6W6R2YzGLEs6B5yOJSLCX9++4DmlxPyiovQ==}
+  '@dovenv/todo@1.0.2':
+    resolution: {integrity: sha512-y9NTogr3bB2vXVUt7bi/4R8IHMPLdl6G/lz7pJZgK1kF32zARBdVECAt/gMnQ8mFxN82/Ei8NWxtK2iMp9gNWg==}
     peerDependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
-  '@dovenv/utils@1.0.1':
-    resolution: {integrity: sha512-LUyiO0RGNtKUN/o9L7Qk+1yIpEDmN0LkKEBNNv1xWSLomoe+Myylgvl4JquGlmPg8oLp8TFrE74FpNG5w476kA==}
+  '@dovenv/utils@1.0.2':
+    resolution: {integrity: sha512-VDFIkE6lGkOSB9+QqPtVHHlNzekVB3qZiVhLKp4dG8eXinx1mfM+pc/m9UDISjpryLD02ybnIhCcUqFiZCyLnw==}
 
-  '@dovenv/workspace@1.0.1':
-    resolution: {integrity: sha512-WnnSMd8fYFBqks+hRSlnie65vKJKKgD2AsI/b85u5oK4iOPGWwAbXhSjK+Vx+56YtWJsoGN8qwBfLE3UVDT/GQ==}
+  '@dovenv/workspace@1.0.2':
+    resolution: {integrity: sha512-M6virvYCYBOUujCLLEVwzKkQiTT5FctXyVBWo6R1ME61wymJkpligRHZFO5YXt67BfVJK5Xd79mI/FH1BUV3jQ==}
     peerDependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
   '@dual-bundle/import-meta-resolve@4.1.0':
     resolution: {integrity: sha512-+nxncfwHM5SgAtrVzgpzJOI1ol0PkumhVo469KCf9lUi21IGcY90G98VuHm9VRrUypmAzawAHO9bs6hqeADaVg==}
@@ -1941,11 +1941,17 @@ packages:
   '@shikijs/core@1.24.2':
     resolution: {integrity: sha512-BpbNUSKIwbKrRRA+BQj0BEWSw+8kOPKDJevWeSE/xIqGX7K0xrCZQ9kK0nnEQyrzsUoka1l81ZtJ2mGaCA32HQ==}
 
+  '@shikijs/core@1.24.3':
+    resolution: {integrity: sha512-VRcf4GYUIkxIchGM9DrapRcxtgojg4IWKUtX5EtW+4PJiGzF2xQqZSv27PJt+WLc18KT3CNLpNWow9JYV5n+Rg==}
+
   '@shikijs/engine-javascript@1.24.1':
     resolution: {integrity: sha512-lNgUSHYDYaQ6daj4lJJqcY2Ru9LgHwpFoposJkRVRPh21Yg4kaPFRhzaWoSg3PliwcDOpDuMy3xsmQaJp201Fg==}
 
   '@shikijs/engine-javascript@1.24.2':
     resolution: {integrity: sha512-EqsmYBJdLEwEiO4H+oExz34a5GhhnVp+jH9Q/XjPjmBPc6TE/x4/gD0X3i0EbkKKNqXYHHJTJUpOLRQNkEzS9Q==}
+
+  '@shikijs/engine-javascript@1.24.3':
+    resolution: {integrity: sha512-De8tNLvYjeK6V0Gb47jIH2M+OKkw+lWnSV1j3HVDFMlNIglmVcTMG2fASc29W0zuFbfEEwKjO8Fe4KYSO6Ce3w==}
 
   '@shikijs/engine-oniguruma@1.24.1':
     resolution: {integrity: sha512-KdrTIBIONWd+Xs61eh8HdIpfigtrseat9dpARvaOe2x0g/FNTbwbkGr3y92VSOVD1XotzEskh3v/nCzyWjkf7g==}
@@ -1953,17 +1959,23 @@ packages:
   '@shikijs/engine-oniguruma@1.24.2':
     resolution: {integrity: sha512-ZN6k//aDNWRJs1uKB12pturKHh7GejKugowOFGAuG7TxDRLod1Bd5JhpOikOiFqPmKjKEPtEA6mRCf7q3ulDyQ==}
 
+  '@shikijs/engine-oniguruma@1.24.3':
+    resolution: {integrity: sha512-iNnx950gs/5Nk+zrp1LuF+S+L7SKEhn8k9eXgFYPGhVshKppsYwRmW8tpmAMvILIMSDfrgqZ0w+3xWVQB//1Xw==}
+
   '@shikijs/transformers@1.24.2':
     resolution: {integrity: sha512-cIwn8YSwO3bsWKJ+pezcXY1Vq0BVwvuLes1TZSC5+Awi6Tsfqhf3vBahOIqZK1rraMKOti2VEAEF/95oXMig1w==}
 
-  '@shikijs/twoslash@1.24.2':
-    resolution: {integrity: sha512-zcwYUNdSQDKquF1t+XrtoXM+lx9rCldAkZnT+e5fULKlLT6F8/F9fwICGhBm9lWp5/U4NptH+YcJUdvFOR0SRg==}
+  '@shikijs/twoslash@1.24.3':
+    resolution: {integrity: sha512-BlspJvcWJCz8tda7RP55eBi2TIzPn9T5wR3NVR0LdX7Itf8YcmOmj0Do1p/s5DdKFgCarzFG+wY+MT1nYk7new==}
 
   '@shikijs/types@1.24.1':
     resolution: {integrity: sha512-ZwZFbShFY/APfKNt3s9Gv8rhTm29GodSKsOW66X6N+HGsZuaHalE1VUEX4fv93UXHTZTLjb3uxn63F96RhGfXw==}
 
   '@shikijs/types@1.24.2':
     resolution: {integrity: sha512-bdeWZiDtajGLG9BudI0AHet0b6e7FbR0EsE4jpGaI0YwHm/XJunI9+3uZnzFtX65gsyJ6ngCIWUfA4NWRPnBkQ==}
+
+  '@shikijs/types@1.24.3':
+    resolution: {integrity: sha512-FPMrJ69MNxhRtldRk69CghvaGlbbN3pKRuvko0zvbfa2dXp4pAngByToqS5OY5jvN8D7LKR4RJE8UvzlCOuViw==}
 
   '@shikijs/vitepress-twoslash@1.24.1':
     resolution: {integrity: sha512-85xpDj8fr0Gl4TJG+Q3F7+FAoPv9RO+ZwdU49fqqW1beYPPcJecvvCeb928fRhziD7k9KSkkiaOav1eif0WIig==}
@@ -5248,6 +5260,9 @@ packages:
   oniguruma-to-es@0.7.0:
     resolution: {integrity: sha512-HRaRh09cE0gRS3+wi2zxekB+I5L8C/gN60S+vb11eADHUaB/q4u8wGGOX3GvwvitG8ixaeycZfeoyruKQzUgNg==}
 
+  oniguruma-to-es@0.8.0:
+    resolution: {integrity: sha512-rY+/a6b+uCgoYIL9itjY0x99UUDHXmGaw7Jjk5ZvM/3cxDJifyxFr/Zm4tTmF6Tre18gAakJo7AzhKUeMNLgHA==}
+
   open@10.1.0:
     resolution: {integrity: sha512-mnkeQ1qP5Ue2wd+aivTD3NHd/lZ96Lu0jgf0pwktLPtx6cTZiH7tyeGRRHs0zX0rbrahXPnXlUnbeXyaBBuIaw==}
     engines: {node: '>=18'}
@@ -5694,6 +5709,9 @@ packages:
 
   regex-recursion@4.3.0:
     resolution: {integrity: sha512-5LcLnizwjcQ2ALfOj95MjcatxyqF5RPySx9yT+PaXu3Gox2vyAtLDjHB8NTJLtMGkvyau6nI3CfpwFCjPUIs/A==}
+
+  regex-recursion@5.0.0:
+    resolution: {integrity: sha512-UwyOqeobrCCqTXPcsSqH4gDhOjD5cI/b8kjngWgSZbxYh5yVjAwTjO5+hAuPRNiuR70+5RlWSs+U9PVcVcW9Lw==}
 
   regex-utilities@2.3.0:
     resolution: {integrity: sha512-8VhliFJAWRaUiVvREIiW2NXXTmHs4vMNnSzuJVhscgmGav3g9VDxLrQndI3dZZVVdp0ZO/5v0xmX516/7M9cng==}
@@ -8102,9 +8120,9 @@ snapshots:
     transitivePeerDependencies:
       - '@algolia/client-search'
 
-  '@dovenv/convert@1.0.1(@dovenv/core@1.0.1)(typescript@5.6.3)':
+  '@dovenv/convert@1.0.2(@dovenv/core@1.0.2)(typescript@5.6.3)':
     dependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
       jsdoc-to-markdown: 9.1.1
       swagger2openapi: 7.0.8
       typedoc: 0.26.11(typescript@5.6.3)
@@ -8114,18 +8132,18 @@ snapshots:
       - encoding
       - typescript
 
-  '@dovenv/core@1.0.1':
+  '@dovenv/core@1.0.2':
     dependencies:
-      '@dovenv/utils': 1.0.1
+      '@dovenv/utils': 1.0.2
       update-notifier: 7.3.1
     transitivePeerDependencies:
       - debug
       - encoding
       - supports-color
 
-  '@dovenv/docs@1.0.1(@algolia/client-search@5.18.0)(@dovenv/core@1.0.1)(@types/node@22.10.2)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)':
+  '@dovenv/docs@1.0.2(@algolia/client-search@5.18.0)(@dovenv/core@1.0.2)(@types/node@22.10.2)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)':
     dependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
       '@shikijs/vitepress-twoslash': 1.24.1(typescript@5.6.3)
       markdown-it-container: 4.0.0
       markdown-it-task-lists: 2.1.1
@@ -8174,7 +8192,7 @@ snapshots:
       - workbox-build
       - workbox-window
 
-  '@dovenv/eslint-config@1.0.1(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(eslint@9.14.0(jiti@1.21.7))':
+  '@dovenv/eslint-config@1.0.2(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(eslint@9.14.0(jiti@1.21.7))':
     dependencies:
       '@eslint/compat': 1.2.3(eslint@9.14.0(jiti@1.21.7))
       '@eslint/js': 9.15.0
@@ -8217,23 +8235,23 @@ snapshots:
       - svelte
       - ts-node
 
-  '@dovenv/examples@1.0.1(@dovenv/core@1.0.1)':
+  '@dovenv/examples@1.0.2(@dovenv/core@1.0.2)':
     dependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
       jsdoc-api: 9.3.4
       leasot: 14.4.0
     transitivePeerDependencies:
       - '@75lb/nature'
 
-  '@dovenv/lint@1.0.1(@dovenv/core@1.0.1)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(typescript@5.6.3)':
+  '@dovenv/lint@1.0.2(@dovenv/core@1.0.2)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(typescript@5.6.3)':
     dependencies:
       '@commitlint/format': 19.5.0
       '@commitlint/lint': 19.5.0
       '@commitlint/load': 19.5.0(@types/node@22.10.2)(typescript@5.6.3)
       '@commitlint/read': 19.5.0
-      '@dovenv/core': 1.0.1
-      '@dovenv/eslint-config': 1.0.1(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(eslint@9.14.0(jiti@1.21.7))
-      '@dovenv/stylelint-config': 1.0.1(stylelint@16.11.0(typescript@5.6.3))
+      '@dovenv/core': 1.0.2
+      '@dovenv/eslint-config': 1.0.2(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(eslint@9.14.0(jiti@1.21.7))
+      '@dovenv/stylelint-config': 1.0.2(stylelint@16.11.0(typescript@5.6.3))
       commitlint-config-gitmoji: 2.3.1
       eslint: 9.14.0(jiti@1.21.7)
       lint-staged: 15.2.10
@@ -8253,16 +8271,16 @@ snapshots:
       - ts-node
       - typescript
 
-  '@dovenv/repo@1.0.1(@dovenv/core@1.0.1)':
+  '@dovenv/repo@1.0.2(@dovenv/core@1.0.2)':
     dependencies:
       '@changesets/changelog-github': 0.5.0
       '@changesets/cli': 2.27.10
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
       husky: 9.1.7
     transitivePeerDependencies:
       - encoding
 
-  '@dovenv/stylelint-config@1.0.1(stylelint@16.11.0(typescript@5.6.3))':
+  '@dovenv/stylelint-config@1.0.2(stylelint@16.11.0(typescript@5.6.3))':
     dependencies:
       postcss-html: 1.7.0
       stylelint: 16.11.0(typescript@5.6.3)
@@ -8272,21 +8290,21 @@ snapshots:
       stylelint-config-standard: 36.0.1(stylelint@16.11.0(typescript@5.6.3))
       stylelint-order: 6.0.4(stylelint@16.11.0(typescript@5.6.3))
 
-  '@dovenv/templates@1.0.1(@dovenv/core@1.0.1)':
+  '@dovenv/templates@1.0.2(@dovenv/core@1.0.2)':
     dependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
-  '@dovenv/theme-banda@1.0.1(@algolia/client-search@5.18.0)(@dovenv/core@1.0.1)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)':
+  '@dovenv/theme-banda@1.0.2(@algolia/client-search@5.18.0)(@dovenv/core@1.0.2)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)':
     dependencies:
-      '@dovenv/convert': 1.0.1(@dovenv/core@1.0.1)(typescript@5.6.3)
-      '@dovenv/core': 1.0.1
-      '@dovenv/docs': 1.0.1(@algolia/client-search@5.18.0)(@dovenv/core@1.0.1)(@types/node@22.10.2)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)
-      '@dovenv/examples': 1.0.1(@dovenv/core@1.0.1)
-      '@dovenv/lint': 1.0.1(@dovenv/core@1.0.1)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(typescript@5.6.3)
-      '@dovenv/repo': 1.0.1(@dovenv/core@1.0.1)
-      '@dovenv/templates': 1.0.1(@dovenv/core@1.0.1)
-      '@dovenv/todo': 1.0.1(@dovenv/core@1.0.1)
-      '@dovenv/workspace': 1.0.1(@dovenv/core@1.0.1)
+      '@dovenv/convert': 1.0.2(@dovenv/core@1.0.2)(typescript@5.6.3)
+      '@dovenv/core': 1.0.2
+      '@dovenv/docs': 1.0.2(@algolia/client-search@5.18.0)(@dovenv/core@1.0.2)(@types/node@22.10.2)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)
+      '@dovenv/examples': 1.0.2(@dovenv/core@1.0.2)
+      '@dovenv/lint': 1.0.2(@dovenv/core@1.0.2)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(typescript@5.6.3)
+      '@dovenv/repo': 1.0.2(@dovenv/core@1.0.2)
+      '@dovenv/templates': 1.0.2(@dovenv/core@1.0.2)
+      '@dovenv/todo': 1.0.2(@dovenv/core@1.0.2)
+      '@dovenv/workspace': 1.0.2(@dovenv/core@1.0.2)
     transitivePeerDependencies:
       - '@75lb/nature'
       - '@algolia/client-search'
@@ -8334,10 +8352,10 @@ snapshots:
       - workbox-build
       - workbox-window
 
-  '@dovenv/theme-pigeonposse@1.0.1(@algolia/client-search@5.18.0)(@dovenv/core@1.0.1)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)':
+  '@dovenv/theme-pigeonposse@1.0.2(@algolia/client-search@5.18.0)(@dovenv/core@1.0.2)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)':
     dependencies:
-      '@dovenv/core': 1.0.1
-      '@dovenv/theme-banda': 1.0.1(@algolia/client-search@5.18.0)(@dovenv/core@1.0.1)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)
+      '@dovenv/core': 1.0.2
+      '@dovenv/theme-banda': 1.0.2(@algolia/client-search@5.18.0)(@dovenv/core@1.0.2)(@types/node@22.10.2)(@typescript-eslint/parser@8.14.0(eslint@9.14.0(jiti@1.21.7))(typescript@5.6.3))(jiti@1.21.7)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.37.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))(workbox-build@7.3.0)(workbox-window@7.3.0)
     transitivePeerDependencies:
       - '@75lb/nature'
       - '@algolia/client-search'
@@ -8385,12 +8403,12 @@ snapshots:
       - workbox-build
       - workbox-window
 
-  '@dovenv/todo@1.0.1(@dovenv/core@1.0.1)':
+  '@dovenv/todo@1.0.2(@dovenv/core@1.0.2)':
     dependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
       leasot: 14.4.0
 
-  '@dovenv/utils@1.0.1':
+  '@dovenv/utils@1.0.2':
     dependencies:
       '@cfworker/json-schema': 4.0.2
       '@clack/core': 0.3.5
@@ -8468,9 +8486,9 @@ snapshots:
       - encoding
       - supports-color
 
-  '@dovenv/workspace@1.0.1(@dovenv/core@1.0.1)':
+  '@dovenv/workspace@1.0.2(@dovenv/core@1.0.2)':
     dependencies:
-      '@dovenv/core': 1.0.1
+      '@dovenv/core': 1.0.2
 
   '@dual-bundle/import-meta-resolve@4.1.0': {}
 
@@ -9684,6 +9702,15 @@ snapshots:
       '@types/hast': 3.0.4
       hast-util-to-html: 9.0.4
 
+  '@shikijs/core@1.24.3':
+    dependencies:
+      '@shikijs/engine-javascript': 1.24.3
+      '@shikijs/engine-oniguruma': 1.24.3
+      '@shikijs/types': 1.24.3
+      '@shikijs/vscode-textmate': 9.3.1
+      '@types/hast': 3.0.4
+      hast-util-to-html: 9.0.4
+
   '@shikijs/engine-javascript@1.24.1':
     dependencies:
       '@shikijs/types': 1.24.1
@@ -9696,6 +9723,12 @@ snapshots:
       '@shikijs/vscode-textmate': 9.3.1
       oniguruma-to-es: 0.7.0
 
+  '@shikijs/engine-javascript@1.24.3':
+    dependencies:
+      '@shikijs/types': 1.24.3
+      '@shikijs/vscode-textmate': 9.3.1
+      oniguruma-to-es: 0.8.0
+
   '@shikijs/engine-oniguruma@1.24.1':
     dependencies:
       '@shikijs/types': 1.24.1
@@ -9706,14 +9739,19 @@ snapshots:
       '@shikijs/types': 1.24.2
       '@shikijs/vscode-textmate': 9.3.1
 
+  '@shikijs/engine-oniguruma@1.24.3':
+    dependencies:
+      '@shikijs/types': 1.24.3
+      '@shikijs/vscode-textmate': 9.3.1
+
   '@shikijs/transformers@1.24.2':
     dependencies:
       shiki: 1.24.2
 
-  '@shikijs/twoslash@1.24.2(typescript@5.6.3)':
+  '@shikijs/twoslash@1.24.3(typescript@5.6.3)':
     dependencies:
-      '@shikijs/core': 1.24.2
-      '@shikijs/types': 1.24.2
+      '@shikijs/core': 1.24.3
+      '@shikijs/types': 1.24.3
       twoslash: 0.2.12(typescript@5.6.3)
     transitivePeerDependencies:
       - supports-color
@@ -9729,9 +9767,14 @@ snapshots:
       '@shikijs/vscode-textmate': 9.3.1
       '@types/hast': 3.0.4
 
+  '@shikijs/types@1.24.3':
+    dependencies:
+      '@shikijs/vscode-textmate': 9.3.1
+      '@types/hast': 3.0.4
+
   '@shikijs/vitepress-twoslash@1.24.1(typescript@5.6.3)':
     dependencies:
-      '@shikijs/twoslash': 1.24.2(typescript@5.6.3)
+      '@shikijs/twoslash': 1.24.3(typescript@5.6.3)
       floating-vue: 5.2.2(vue@3.5.13(typescript@5.6.3))
       mdast-util-from-markdown: 2.0.2
       mdast-util-gfm: 3.0.0
@@ -13515,6 +13558,12 @@ snapshots:
       regex: 5.0.2
       regex-recursion: 4.3.0
 
+  oniguruma-to-es@0.8.0:
+    dependencies:
+      emoji-regex-xs: 1.0.0
+      regex: 5.0.2
+      regex-recursion: 5.0.0
+
   open@10.1.0:
     dependencies:
       default-browser: 5.2.1
@@ -13938,6 +13987,10 @@ snapshots:
       '@babel/runtime': 7.26.0
 
   regex-recursion@4.3.0:
+    dependencies:
+      regex-utilities: 2.3.0
+
+  regex-recursion@5.0.0:
     dependencies:
       regex-utilities: 2.3.0
 

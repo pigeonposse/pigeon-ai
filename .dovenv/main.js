@@ -7,7 +7,6 @@ import {
 	asciiFont,
 	yaml,
 	getObjectFrom,
-	exec,
 } from '@dovenv/core/utils'
 import pigeonposseTheme from '@dovenv/theme-pigeonposse'
 
@@ -77,33 +76,9 @@ export default defineConfig(
 
 			},
 		} },
-		custom : { 'create-repo' : {
-			desc : 'create a new repository  in github',
-			fn   : async (  ) => {
-
-				const cmd = `git init &&
-git add . &&
-git commit -m "first commit" &&
-git branch -M main &&
-git remote add origin https://github.com/${pkg.extra.collective.id}/${pkg.name}.git &&
-git push -u origin main`
-
-				console.log( `Command to execute:\n\n${cmd}\n\n` )
-				await exec( cmd )
-
-			},
-		} },
 	},
 	pigeonposseTheme( {
 		workspaceDir,
-		repo : {
-			URL          : pkg.repository.url,
-			homepageURL  : pkg.homepage,
-			tags         : pkg.keywords,
-			desc         : pkg.description,
-			workflowsDir : '.github/workflows',
-		},
-
 		lint : {
 			staged : { '*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,json,yml,yaml}': 'dovenv lint eslint --silent' },
 			eslint : { flags: [ '--fix' ] },
@@ -133,7 +108,7 @@ git push -u origin main`
 				url  : pkg.extra.licenseURL,
 			},
 			version : false,
-			repoURL : pkg.extra.collective.gh,
+			repoURL : pkg.repository.url,
 			moreURL : pkg.extra.collective.url,
 			footer  : { links : {
 				web   : pkg.extra.collective.url,
