@@ -41,7 +41,7 @@
 		"build": "pnpm run --sequential \"/build:.*/\"",
 		"build:_": "dovenv templates --silent",
 		"build:doc": "dovenv docs build --silent",
-		"dev": "pnpm build:_ & dovenv docs dev --silent",
+		"dev": "pnpm build:_ && dovenv docs dev --silent",
 		"prepare": "dovenv git husky --silent",
 		"test": "pnpm run --sequential \"/test:.*/\"",
 		"test:check": "dovenv check --silent",
@@ -49,8 +49,8 @@
 		"test:transform": "dovenv transform --silent"
 	},
 	"devDependencies": {
-		"@dovenv/core": "1.0.2",
-		"@dovenv/theme-pigeonposse": "1.0.2"
+		"@dovenv/core": "1.1.4",
+		"@dovenv/theme-pigeonposse": "1.1.4"
 	},
 	"packageManager": "pnpm@9.11.0",
 	"engines": {

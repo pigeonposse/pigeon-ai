@@ -20,6 +20,7 @@ jobs:
 
       - name: Check for changes in repositories
         id: check-changes
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPOS: ${{ steps.load-repos.outputs.repos }}
