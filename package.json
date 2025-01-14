@@ -43,14 +43,15 @@
 		"build:doc": "dovenv docs build --silent",
 		"dev": "pnpm build:_ && dovenv docs dev --silent",
 		"prepare": "dovenv git husky --silent",
+		"preview": "dovenv docs preview --silent",
 		"test": "pnpm run --sequential \"/test:.*/\"",
 		"test:check": "dovenv check --silent",
 		"test:lint": "dovenv lint staged --silent",
 		"test:transform": "dovenv transform --silent"
 	},
 	"devDependencies": {
-		"@dovenv/core": "1.1.4",
-		"@dovenv/theme-pigeonposse": "1.1.4"
+		"@dovenv/core": "1.2.3",
+		"@dovenv/theme-pigeonposse": "1.2.3"
 	},
 	"packageManager": "pnpm@9.11.0",
 	"engines": {
@@ -62,8 +63,8 @@
 		"productName": "Pigeon AI",
 		"shortDesc": "PigeonPosse AI Toolkit",
 		"action": "Discover the magic of our AI tools",
-		"libraryUrl": "https://www.npmjs.com/package/pigeon-ai",
 		"licenseUrl": "https://github.com/pigeonposse/pigeon-ai/blob/main/LICENSE",
+		"libraryUrl": "https://github.com/pigeonposse/pigeon-ai",
 		"libraryId": "pigeon-ai",
 		"repoId": "pigeon-ai",
 		"rawRepoUrl": "https://raw.githubusercontent.com/pigeonposse/pigeon-ai",

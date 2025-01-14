@@ -49,10 +49,10 @@ jobs:
             fi
           done
 
-          echo "CHANGED=$CHANGED" >> $GITHUB_ENV
+          echo "::set-output name=changed::$CHANGED" 
 
       - name: 💾🐙😺➡️ Call to workflow for create lib releases
-        if: env.CHANGED == 'true'
+        if: ${{ steps.check-changes.outputs.changed }} == 'true'
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: release.yml

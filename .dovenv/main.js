@@ -53,7 +53,6 @@ export default defineConfig(
 			]
 
 			return {
-				// input  : './docs',
 				styles : { color : {
 					primary   : '#e10c68',
 					secondary : '#fc8c2f',
@@ -70,6 +69,9 @@ export default defineConfig(
     gap: 10px;
 }
 				`,
+				// pwa          : false,
+				// favicon      : '/favicon.png',
+				// logo         : '/logo.png',
 				changelogURL : false,
 				npmURL       : false,
 				sidebar      : {
@@ -144,6 +146,12 @@ ${pkg.description}
 						} )
 
 					}
+					layoutConfig.features.push( {
+						title   : 'Repository',
+						icon    : '🧑‍💻',
+						details : 'View project on GitHub',
+						link    : core.pkg.repository.url,
+					} )
 					data.const.docsIndex = yaml.serialize( layoutConfig )
 
 					return data

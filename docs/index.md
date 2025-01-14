@@ -29,5 +29,9 @@ features:
     icon: 🤖
     details: AI Assistant for Your Local Environment
     link: /guide/env-ai
+  - title: Repository
+    icon: 🧑‍💻
+    details: View project on GitHub
+    link: https://github.com/pigeonposse/pigeon-ai
 
 ---

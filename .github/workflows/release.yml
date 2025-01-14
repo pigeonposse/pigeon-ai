@@ -91,15 +91,13 @@ jobs:
       #########################################################################
 
       - name: 🌥 Deploy in cloudflare pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy build/docs --project-name=ai
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
-          projectName: "ai"
-          directory: 'build/docs'
-          wranglerVersion: '3'
+          packageManager: pnpm
 
       - name: ℹ️➡️ Check for changes in package.json
         run: |
