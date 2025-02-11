@@ -39,6 +39,7 @@
 	"scripts": {
 		".": "dovenv",
 		"build": "pnpm run --sequential \"/build:.*/\"",
+		"build-assets": "dovenv docs generate-assets --flag=\"--preset minimal\" --flag=\"docs/public/logo.png\"",
 		"build:_": "dovenv templates -k 'docs*' --silent",
 		"build:doc": "dovenv docs build --silent",
 		"dev": "pnpm build:_ && dovenv docs dev --silent",
@@ -47,8 +48,7 @@
 		"test": "pnpm run --sequential \"/test:.*/\"",
 		"test:check": "dovenv check --silent",
 		"test:lint": "dovenv lint staged --silent",
-		"test:transform": "dovenv transform --silent",
-		"build-assets": "dovenv docs generate-assets --flag=\"--preset minimal\" --flag=\"docs/public/logo.png\""
+		"test:transform": "dovenv transform --silent"
 	},
 	"devDependencies": {
 		"@dovenv/core": "1.3.2",
@@ -64,12 +64,12 @@
 		"productName": "Pigeon AI",
 		"shortDesc": "PigeonPosse AI Toolkit",
 		"action": "Discover the magic of our AI tools",
-		"licenseUrl": "https://github.com/pigeonposse/pigeon-ai/blob/main/LICENSE",
-		"libraryUrl": "https://github.com/pigeonposse/pigeon-ai",
-		"libraryId": "pigeon-ai",
+		"licenseURL": "https://github.com/pigeonposse/pigeon-ai/blob/main/LICENSE",
+		"libraryURL": "https://github.com/pigeonposse/pigeon-ai",
+		"libraryID": "pigeon-ai",
 		"repoId": "pigeon-ai",
-		"rawRepoUrl": "https://raw.githubusercontent.com/pigeonposse/pigeon-ai",
-		"docsUrl": "https://ai.pigeonposse.com",
+		"rawRepoURL": "https://raw.githubusercontent.com/pigeonposse/pigeon-ai",
+		"docsURL": "https://ai.pigeonposse.com",
 		"collective": {
 			"id": "pigeonposse",
 			"name": "PigeonPosse",

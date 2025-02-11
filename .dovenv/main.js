@@ -124,9 +124,9 @@ ${pkg.description}
 							name    : name,
 							tagline : pkg.extra.shortDesc,
 							text    : pkg.extra.action,
-							image: {
-								src: '/logo.png',
-								alt: name
+							image   : {
+								src : '/logo.png',
+								alt : name,
 							},
 						},
 						features : [],
