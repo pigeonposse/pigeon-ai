@@ -53,25 +53,18 @@ export default defineConfig(
 			]
 
 			return {
-				styles : { color : {
-					primary   : '#e10c68',
-					secondary : '#fc8c2f',
-					terciary  : '#1d9bf7',
-					dark      : {
-						bg     : '#000',
-						bgAlt  : '#0b0b0d',
-						bgSoft : '#0d0c10',
-					},
-				} },
 				css : `
 .vp-doc p:has( > a) {
     display: flex;
     gap: 10px;
 }
+.image-bg {
+	opacity: 0.3 !important;
+}
 				`,
-				// pwa          : false,
-				// favicon      : '/favicon.png',
-				// logo         : '/logo.png',
+
+				favicon      : '/favicon.png',
+				logo         : '/logo.png',
 				changelogURL : false,
 				npmURL       : false,
 				sidebar      : {
@@ -131,6 +124,10 @@ ${pkg.description}
 							name    : name,
 							tagline : pkg.extra.shortDesc,
 							text    : pkg.extra.action,
+							image: {
+								src: '/logo.png',
+								alt: name
+							},
 						},
 						features : [],
 					}
